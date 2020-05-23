@@ -1,44 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Jmportilla.GitHub.io by jmportilla</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<head>
+  <title>Spotify Artist Network</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  </head>
-  <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/jmportilla">View On GitHub</a></li>
-        </nav>
-      </div><!-- end header -->
-
-    <div class="wrapper">
-
-      <section>
-        <div id="title">
-          <h1>Jmportilla.GitHub.io</h1>
-          <p>My github page</p>
-          <hr>
-          
-        </div>
-
-        <p>Hello and welcome to my site.</p>
-      </section>
-
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+</body>
 </html>
+<h2>Network Analysis - Spotify Artists</h2>
+ 
+<div style="width:700px; font-size:14px;">
+  Drag and Hold to Turn off edges for faster clustering.
+</div>
+
+<div id="mynetwork"></div>
+<script type="text/javascript" src="https://visjs.github.io/vis-network/standalone/umd/vis-network.min.js"></script>
+<script type="text/javascript" src='big_artist_nodes.js'></script>
+<script type="text/javascript" src='big_artist_edges.js'></script>
+<script type="text/javascript" src='script.js'></script>
