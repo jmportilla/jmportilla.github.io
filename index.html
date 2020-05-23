@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Spotify Artist Network</title>
+  <title>Prototype Two</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 </body>
 </html>
-<h2>Network Analysis - Spotify Artists</h2>
+<h1>Spotify Artist Network Graph</h1>
  
-<div style="width:700px; font-size:14px;">
-  Drag and Hold to Turn off edges for faster clustering.
-</div>
+<p>
+  The following graph was created with the Spotify API.<br> As the graph loads, hold your click down and drag to remove the edges to allow clustering to occur faster. <br>
+  You can also zoom in and out, drag nodes to pull their connections, and click a node to highlight its connections. Enjoy!
+</p>
 
 <div id="mynetwork"></div>
 <script type="text/javascript" src="https://visjs.github.io/vis-network/standalone/umd/vis-network.min.js"></script>
-<script type="text/javascript" src='big_artist_nodes.js'></script>
-<script type="text/javascript" src='big_artist_edges.js'></script>
+<script type="text/javascript" src='huge_artist_nodes.js'></script>
+<script type="text/javascript" src='huge_artist_edges.js'></script>
 <script type="text/javascript" src='script.js'></script>

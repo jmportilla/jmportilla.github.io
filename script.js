@@ -1,5 +1,7 @@
 var network;
 
+
+
 function redrawAll() {
   // remove positoins
   for (var i = 0; i < nodes.length; i++) {
@@ -16,17 +18,19 @@ function redrawAll() {
   var options = {
     nodes: {
       shape: "dot",
+      borderWidthSelected:10,
       scaling: {
         min: 10,
         max: 30
       },
       font: {
-        size: 12,
+        size: 19,
         face: "Tahoma"
       }
     },
     edges: {
       width: 0.15,
+      selectionWidth: 18,
       color: { inherit: "from" },
       smooth: {
         type: "continuous"
@@ -34,19 +38,21 @@ function redrawAll() {
     },
     physics: {
       stabilization: false,
+      timestep:2.6,
+      maxVelocity:70,
       barnesHut: {
         gravitationalConstant: -80000,
-        springConstant: 0.01,
+        springConstant: 0.001,
         springLength: 200
       }
     },
     interaction: {
       tooltipDelay: 200,
-      hideEdgesOnDrag: true
+      hideEdgesOnDrag: true,
+      hideEdgesOnZoom: true,
     }
   };
 
-  // Note: data is coming from ./datasources/WorldCup2014.js
   network = new vis.Network(container, data, options);
 }
 

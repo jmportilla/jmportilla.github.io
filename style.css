@@ -1,0 +1,19 @@
+
+h1{
+	font-family: 'Montserrat Subrayada', sans-serif;
+	text-align: center;
+}
+p{
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+#mynetwork {
+  width: 100vw;
+  height:100vh;
+  margin: auto;
+  outline-width: 0;
+}
+*{
+ outline:none;
+}
