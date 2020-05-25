@@ -1,7 +1,5 @@
 var network;
 
-
-
 function redrawAll() {
   // remove positoins
   for (var i = 0; i < nodes.length; i++) {
@@ -9,12 +7,15 @@ function redrawAll() {
     delete nodes[i].y;
   }
 
+
+
   // create a network
   var container = document.getElementById("mynetwork");
   var data = {
     nodes: nodes,
     edges: edges
   };
+
   var options = {
     nodes: {
       shape: "dot",
@@ -29,6 +30,7 @@ function redrawAll() {
       }
     },
     edges: {
+      hidden:true,
       width: 0.15,
       selectionWidth: 18,
       color: { inherit: "from" },
@@ -52,6 +54,7 @@ function redrawAll() {
       hideEdgesOnZoom: true,
     }
   };
+
 
   network = new vis.Network(container, data, options);
 }
