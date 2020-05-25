@@ -30,7 +30,6 @@ function redrawAll() {
       }
     },
     edges: {
-      hidden:true,
       width: 0.15,
       selectionWidth: 18,
       color: { inherit: "from" },
